@@ -13,7 +13,7 @@ public class CameraHandler : MonoBehaviour
     [SerializeField] Vector3[] camOffsets;
     [SerializeField] float[] shadowDistances;
 
-    int idxOffset = 0;
+    int idxOffset = 1;
 
     private void Awake()
     {
@@ -50,5 +50,6 @@ public class CameraHandler : MonoBehaviour
     {
         cam.Follow = player.transform;
         cam.LookAt = player.transform;
+        Cam_Clicked();
     }
 }
